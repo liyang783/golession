@@ -18,6 +18,7 @@ func main() {
 	}
 
 	g.Go(func() error {
+
 		http.HandleFunc("/", indexHandle)
 		return srv.ListenAndServe()
 	})
